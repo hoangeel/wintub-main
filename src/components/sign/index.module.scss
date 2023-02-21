@@ -1,0 +1,246 @@
+.signupBg{
+  background: #fff;
+  padding: 105px 0px 70px;
+  .card{
+    max-width: 678px;
+    margin: 0px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px 0px rgb(0 0 0 / 15%);
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 57px 65px;
+    h1{
+      font-size: 24px;
+      color: #525252;
+      font-weight: 400;
+      margin-bottom: 60px;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.2;
+    }
+    label{
+      font-size: 16px;
+      color: #555;
+      text-transform: capitalize;
+      display: block;
+      margin-bottom: 5px;
+      font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+      font-weight: 400;
+      a{
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+        &:hover{
+          cursor: pointer;
+          opacity: 0.7;
+        }
+      }
+    }
+    .group{
+      .form{
+        input{
+          line-height: 50px;
+          background: #fafafa;
+          box-shadow: inset 0px 1px 3px 0px rgb(0 0 0 / 8%);
+          border-radius: 5px;
+          padding: 0 20px;
+          font-size: 16px;
+          color: #666;
+          transition: all 0.4s ease;
+          outline: none;
+          margin: 0 0 22px 0;
+          border: none;
+          font-family: inherit;
+          overflow: visible;
+        }
+      }
+      .left{
+        padding: 0px 15px;
+        .inputgroup{
+          span{
+            margin-bottom: 22px;
+            background: #fafafa;
+            box-shadow: inset 0px 1px 3px 0px rgb(0 0 0 / 8%);
+            border: none;
+            border-left: #fafafa 3px solid;
+            padding: 0px;
+            button{
+              background: none;
+              border: none;
+              &:hover{
+                cursor: pointer;
+                opacity: 0.7;
+              }
+              .icon{
+                color: #666;
+              }
+            }
+          }
+        }
+      }
+      .right{
+        padding: 0px 15px;
+        .formCheck{
+          .groupCheck{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 22px;
+            .checkLeft{
+              margin-right: auto;
+            }
+            .check{
+              height: 50px;
+              padding-top: 5px;
+              label{
+                margin:0px 0px 0px 10px;
+              }
+              input{
+                height: 20px;
+                width: 20px;
+                background: #e5e5e5;
+                box-shadow: inset 0px 1px 3px 0px rgb(0 0 0 / 8%);
+                border: #e5e5e5 3px solid;
+                &:checked{
+                  background: #007BFF;
+                  border: #e5e5e5 3px solid;
+                }
+                &:hover{
+                  cursor: pointer;
+                  opacity: 0.7;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .Create{
+      margin: 42px 0 0  ;
+      width: 225px;
+      height: 52px;
+      padding: 0px;
+      background: #007BFF;
+      border-radius: 5px;
+      transition: all 0.4s ease;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 400;
+      color: #fff;
+      font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+      outline: none;
+      text-transform: none;
+      &:hover{
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+    .reCAPTCHA{
+      background: #f9f9f9;
+      color: #000;
+      border: 1px solid #d3d3d3;
+      border-radius: 3px;
+      max-width:300px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px ;
+      input{
+        height: 28px;
+        width: 28px;
+        z-index: 1;
+        border: 2px solid #c1c1c1;
+        &:hover{
+          cursor: pointer;
+          opacity: 0.7;
+        }
+      }
+      label{
+        margin-left: 20px;
+        max-width: 160px;
+        font-family: Roboto,helvetica,arial,sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: #000;
+      }
+      img{
+        height: 32px;
+        width: auto;
+        margin: 0 10px 5px auto;
+        display: block;
+      }
+      p{
+        width: 80px;
+        color: #555;
+        cursor: default;
+        font-family: Roboto,helvetica,arial,sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 10px;
+        margin: 0 ;
+        text-align: right;
+        a{
+          color: #555;
+          font-family: Roboto,helvetica,arial,sans-serif;
+          font-size: 8px;
+          font-weight: 400;
+          text-decoration: none;
+          &:hover{
+            cursor: pointer;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}
+.Dropdown{
+  span{
+    background: red;
+    button{
+      max-width: 258px;
+      background: none;
+      border: none;
+      text-align: right;
+      .icon{
+        color: #999;
+      }
+      &:hover{
+        background: none;
+      }
+    }
+  }
+}
+@media(max-width: 767px){
+  .signupBg{
+    .card{
+      padding: 50px 40px;
+    }
+  }
+}
+@media(max-width: 576px){
+  .signupBg{
+    .card{
+      .group{
+        .right{
+          .formCheck{
+            .groupCheck{
+              margin-bottom: 18px;
+              .check{
+                height: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 300px){
+  .signupBg{
+    .card{
+      .Create{
+        width: 100%;
+      }
+    }
+  }
+}

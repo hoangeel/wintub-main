@@ -1,0 +1,109 @@
+.container{
+  padding: 0px 105px;
+}
+.footer{
+  background: #004a99;
+  .content{
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0 52px 0;
+    .left{
+      margin-right: 30px;
+      max-width: 350px;
+      h1{
+        font-size: 34px;
+        margin: 0 0 20px 0;
+        padding: 2px 0 2px 0;
+        line-height: 1;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+      p{
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 0;
+        font-family: "Montserrat", sans-serif;
+        color: #ecf5ff;
+        margin: 0 0 30px 0;
+      }
+    }
+    .right{
+      display: flex;
+      flex-direction: column;
+      h1{
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 30px;
+        line-height: 1.2;
+      }
+      a{
+        color: #ecf5ff;
+        transition: 0.5s;
+        text-decoration: none;
+        background-color: transparent;
+        margin-bottom: 16px;
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        line-height: 1.5;
+        &:hover{
+          cursor: pointer;
+          cursor: 0.7;
+        }
+      }
+    }
+  }
+  .end{
+    background: #00428a;
+    text-align: center;
+    padding: 30px 0px;
+    p{
+      margin-bottom: 0px;
+      color: #eee;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+}
+@media(max-width:1400px){
+  .container{
+    padding: 0px 15px;
+  }
+}
+@media(max-width:1200px){
+  .footer{
+    .content{
+      .left{
+        max-width: 290px;
+      }
+    }
+  }
+}
+@media(max-width:992px){
+  .footer{
+    .content{
+      .left{
+        max-width: 330px;
+      }
+    }
+  }
+}
+@media(max-width:767px){
+  .footer{
+    .content{
+      flex-direction: column;
+      .left{
+        max-width: 510px;
+      }
+    }
+  }
+}

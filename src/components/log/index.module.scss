@@ -1,0 +1,86 @@
+.log{
+  background: #fff;
+  padding: 105px 0px 70px;
+  .card{
+    max-width: 678px;
+    margin: 0px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px 0px rgb(0 0 0 / 15%);
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 57px 65px;
+    h1{
+      font-size: 24px;
+      color: #525252;
+      font-weight: 400;
+      margin-bottom: 60px;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.2;
+    }
+    label{
+      font-size: 16px;
+      color: #555;
+      text-transform: capitalize;
+      display: block;
+      margin-bottom: 5px;
+      font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+      font-weight: 400;
+    }
+    input{
+      line-height: 50px;
+      background: #fafafa;
+      box-shadow: inset 0px 1px 3px 0px rgb(0 0 0 / 8%);
+      border-radius: 5px;
+      padding: 0 20px;
+      font-size: 16px;
+      color: #666;
+      transition: all 0.4s ease;
+      outline: none;
+      margin: 0 0 37px 0;
+      border: none;
+      font-family: inherit;
+      overflow: visible;
+    }
+    .col{
+      padding: 0px 15px;
+    }
+    button{
+      max-width: 268px;
+      padding: 0px;
+      background: #007BFF;
+      border-radius: 5px;
+      line-height: 50px;
+      font-size: 18px;
+      color: #fff;
+      font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: middle;
+      &:hover{
+        background: blue;
+        border: blue 1px solid;
+        color: black;
+      }
+    }
+    .sign{
+      text-align: right;
+      a{
+        margin-bottom: 0px;
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+        &:hover{
+          color: blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 767px){
+  .log{
+    .card{
+      padding: 50px 40px;
+    }
+  }
+}
